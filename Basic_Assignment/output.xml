@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.1 (Python 3.12.6 on win32)" generated="2024-09-23T17:12:49.333432" rpa="false" schemaversion="5">
+<suite id="s1" name="Basic Assignment" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment">
+<suite id="s1-s1" name="Assignment 1" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_1.robot">
+<test id="s1-s1-t1" name="TC-01_01" line="13">
+<kw name="Validate Age">
+<if>
+<branch type="IF" condition="${age}&gt;18">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eligible For Voting</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-23T17:12:25.633457" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-23T17:12:25.633457" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Not Eligible For Voting</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.633457" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:25.633457" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-23T17:12:25.633457" elapsed="0.000000"/>
+</if>
+<arg>16</arg>
+<status status="PASS" start="2024-09-23T17:12:25.633457" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:25.633457" elapsed="0.000000"/>
+</test>
+<test id="s1-s1-t2" name="TC-01_02" line="15">
+<kw name="Validate Age">
+<if>
+<branch type="IF" condition="${age}&gt;18">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eligible For Voting</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.639912" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:25.639912" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Not Eligible For Voting</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-23T17:12:25.642419" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-23T17:12:25.639912" elapsed="0.002507"/>
+</branch>
+<status status="PASS" start="2024-09-23T17:12:25.639912" elapsed="0.002507"/>
+</if>
+<arg>20</arg>
+<status status="PASS" start="2024-09-23T17:12:25.639912" elapsed="0.002507"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:25.639912" elapsed="0.002507"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:25.433000" elapsed="0.209139"/>
+</suite>
+<suite id="s1-s2" name="Assignment 10" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot">
+<test id="s1-s2-t1" name="TC-10" line="11">
+<kw name="Create Fruit list">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-23T17:12:25.653422" level="INFO">${Fruit} = ['Apple', 'Cherry', 'Banana']</msg>
+<var>${Fruit}</var>
+<arg>Apple</arg>
+<arg>Cherry</arg>
+<arg>Banana</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.653422" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${Fruit}</value>
+<status status="PASS" start="2024-09-23T17:12:25.653422" elapsed="0.000000"/>
+</return>
+<msg time="2024-09-23T17:12:25.653422" level="INFO">@{my_fruits} = [ Apple | Cherry | Banana ]</msg>
+<var>@{my_fruits}</var>
+<status status="PASS" start="2024-09-23T17:12:25.652393" elapsed="0.001029"/>
+</kw>
+<kw name="Number Of Fruits">
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-09-23T17:12:25.655964" level="INFO">Length is 3.</msg>
+<msg time="2024-09-23T17:12:25.655964" level="INFO">${number} = 3</msg>
+<var>${number}</var>
+<arg>${fruit_list}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.653422" elapsed="0.002542"/>
+</kw>
+<return>
+<value>${number}</value>
+<status status="PASS" start="2024-09-23T17:12:25.655964" elapsed="0.000000"/>
+</return>
+<msg time="2024-09-23T17:12:25.655964" level="INFO">${numbers} = 3</msg>
+<var>${numbers}</var>
+<arg>@{my_fruits}</arg>
+<status status="PASS" start="2024-09-23T17:12:25.653422" elapsed="0.002542"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${my_fruits[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.655964" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${my_fruits[1]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.655964" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${my_fruits[2]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.655964" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.655964" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:25.646859" elapsed="0.009105"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:25.445825" elapsed="0.210139"/>
+</suite>
+<suite id="s1-s3" name="Assignment 11" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot">
+<test id="s1-s3-t1" name="TC-11" line="11">
+<kw name="Create User Info">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-09-23T17:12:26.562847" level="INFO">${user_info} = {'name': 'John', 'age': '30', 'city': 'Bangkok'}</msg>
+<var>${user_info}</var>
+<arg>name=John</arg>
+<arg>age=30</arg>
+<arg>city=Bangkok</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-09-23T17:12:26.562212" elapsed="0.000635"/>
+</kw>
+<return>
+<value>${user_info}</value>
+<status status="PASS" start="2024-09-23T17:12:26.562847" elapsed="0.000516"/>
+</return>
+<msg time="2024-09-23T17:12:26.563363" level="INFO">&amp;{user} = { name=John | age=30 | city=Bangkok }</msg>
+<var>&amp;{user}</var>
+<status status="PASS" start="2024-09-23T17:12:26.553706" elapsed="0.009657"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Log Name: ${user.name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:26.563363" elapsed="0.001024"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:26.553706" elapsed="0.010681"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:26.363735" elapsed="0.200652"/>
+</suite>
+<suite id="s1-s4" name="Assignment 12" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_12.robot">
+<test id="s1-s4-t1" name="TC-12" line="8">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-23T17:12:26.567377" level="INFO">${age} = 17</msg>
+<var>${age}</var>
+<arg>17</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-23T17:12:26.567377" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>You are underage</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:26.568392" elapsed="0.001007"/>
+</kw>
+<arg>${age}&gt;18</arg>
+<arg>Log To Console</arg>
+<arg>You are an adult</arg>
+<arg>ELSE IF</arg>
+<arg>${age}==18</arg>
+<arg>Log To Console</arg>
+<arg>You just became an adult</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>You are underage</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:26.568392" elapsed="0.001007"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:26.566391" elapsed="0.003008"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:26.377284" elapsed="0.193115"/>
+</suite>
+<suite id="s1-s5" name="Assignment 13" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_13.robot">
+<test id="s1-s5-t1" name="TC-13" line="8">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-23T17:12:27.453764" level="INFO">@{Fruit} = [ apple | banana | cherry ]</msg>
+<var>@{Fruit}</var>
+<arg>apple</arg>
+<arg>banana</arg>
+<arg>cherry</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.453764" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.453764" elapsed="0.000000"/>
+</kw>
+<var name="${Fruit}">apple</var>
+<status status="PASS" start="2024-09-23T17:12:27.453764" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.453764" elapsed="0.000000"/>
+</kw>
+<var name="${Fruit}">banana</var>
+<status status="PASS" start="2024-09-23T17:12:27.453764" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.453764" elapsed="0.000000"/>
+</kw>
+<var name="${Fruit}">cherry</var>
+<status status="PASS" start="2024-09-23T17:12:27.453764" elapsed="0.000000"/>
+</iter>
+<var>${Fruit}</var>
+<value>@{Fruit}</value>
+<status status="PASS" start="2024-09-23T17:12:27.453764" elapsed="0.000000"/>
+</for>
+<status status="PASS" start="2024-09-23T17:12:27.453764" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:27.263539" elapsed="0.198742"/>
+</suite>
+<suite id="s1-s6" name="Assignment 14" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_14.robot">
+<test id="s1-s6-t1" name="TC-14" line="8">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==5</arg>
+<arg>Exit FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==3</arg>
+<arg>Continue FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</kw>
+<var name="${numbers}">1</var>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==5</arg>
+<arg>Exit FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==3</arg>
+<arg>Continue FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</kw>
+<var name="${numbers}">2</var>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==5</arg>
+<arg>Exit FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Continue For Loop" owner="BuiltIn">
+<msg time="2024-09-23T17:12:27.469249" level="INFO">Continuing for loop from the next iteration.</msg>
+<doc>Skips the current FOR loop iteration and continues from the next.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.000000"/>
+</kw>
+<arg>${numbers}==3</arg>
+<arg>Continue FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.000000"/>
+</kw>
+<var name="${numbers}">3</var>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==5</arg>
+<arg>Exit FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.003010"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.472259" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==3</arg>
+<arg>Continue FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.472259" elapsed="0.001020"/>
+</kw>
+<var name="${numbers}">4</var>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.004030"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Exit For Loop" owner="BuiltIn">
+<msg time="2024-09-23T17:12:27.473970" level="INFO">Exiting for loop altogether.</msg>
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.473970" elapsed="0.000000"/>
+</kw>
+<arg>${numbers}==5</arg>
+<arg>Exit FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.473279" elapsed="0.000691"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-23T17:12:27.473970" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==3</arg>
+<arg>Continue FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2024-09-23T17:12:27.473970" elapsed="0.000000"/>
+</kw>
+<var name="${numbers}">5</var>
+<status status="PASS" start="2024-09-23T17:12:27.473279" elapsed="0.000691"/>
+</iter>
+<var>${numbers}</var>
+<value>1</value>
+<value>10</value>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.010669"/>
+</for>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.010669"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:27.273116" elapsed="0.200854"/>
+</suite>
+<suite id="s1-s7" name="Assignment 15" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_15.robot">
+<test id="s1-s7-t1" name="TC-15" line="8">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T17:12:28.383110" level="INFO">Clicking element 'id=0'.</msg>
+<msg time="2024-09-23T17:12:28.383110" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-23T17:12:28.383110" level="FAIL">No browser is open.</msg>
+<arg>id=0</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-23T17:12:28.383110" elapsed="0.000000">No browser is open.</status>
+</kw>
+<msg time="2024-09-23T17:12:28.383110" level="INFO">${status} = False</msg>
+<var>${status}</var>
+<arg>Click Element</arg>
+<arg>id=0</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.383110" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Status: ${status}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.383110" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T17:12:28.383110" level="INFO">Typing text '5' into text field 'id=0'.</msg>
+<msg time="2024-09-23T17:12:28.383110" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-23T17:12:28.383110" level="FAIL">No browser is open.</msg>
+<arg>id=0</arg>
+<arg>5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-23T17:12:28.383110" elapsed="0.000000">No browser is open.</status>
+</kw>
+<arg>Input Text</arg>
+<arg>id=0</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.383110" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Ignored the error and continued</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.383110" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:28.383110" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:28.193237" elapsed="0.189873"/>
+</suite>
+<suite id="s1-s8" name="Assignment 16" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot">
+<test id="s1-s8-t1" name="TC-16" line="8">
+<kw name="Calculate Factorial">
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-09-23T17:12:28.397426" level="INFO">${number} = 5</msg>
+<var>${number}</var>
+<arg>${number}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.397426" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number}==1</arg>
+<arg>Return From Keyword</arg>
+<arg>1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.397426" elapsed="0.000000"/>
+</kw>
+<kw name="Calculate Factorial">
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-09-23T17:12:28.397426" level="INFO">${number} = 4</msg>
+<var>${number}</var>
+<arg>${number}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.397426" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number}==1</arg>
+<arg>Return From Keyword</arg>
+<arg>1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.397426" elapsed="0.000000"/>
+</kw>
+<kw name="Calculate Factorial">
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-09-23T17:12:28.397426" level="INFO">${number} = 3</msg>
+<var>${number}</var>
+<arg>${number}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.397426" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number}==1</arg>
+<arg>Return From Keyword</arg>
+<arg>1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.397426" elapsed="0.000000"/>
+</kw>
+<kw name="Calculate Factorial">
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-09-23T17:12:28.402984" level="INFO">${number} = 2</msg>
+<var>${number}</var>
+<arg>${number}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.402984" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number}==1</arg>
+<arg>Return From Keyword</arg>
+<arg>1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.402984" elapsed="0.000000"/>
+</kw>
+<kw name="Calculate Factorial">
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-09-23T17:12:28.402984" level="INFO">${number} = 1</msg>
+<var>${number}</var>
+<arg>${number}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.402984" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Return From Keyword" owner="BuiltIn">
+<msg time="2024-09-23T17:12:28.402984" level="INFO">Returning from the enclosing user keyword.</msg>
+<arg>1</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.402984" elapsed="0.000000"/>
+</kw>
+<arg>${number}==1</arg>
+<arg>Return From Keyword</arg>
+<arg>1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.402984" elapsed="0.000000"/>
+</kw>
+<kw name="Calculate Factorial">
+<var>${previous}</var>
+<arg>${number-1}</arg>
+<status status="NOT RUN" start="2024-09-23T17:12:28.402984" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${result}</var>
+<arg>${number} * ${previous}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-09-23T17:12:28.402984" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${result}</value>
+<status status="NOT RUN" start="2024-09-23T17:12:28.402984" elapsed="0.000000"/>
+</return>
+<msg time="2024-09-23T17:12:28.402984" level="INFO">${previous} = 1</msg>
+<var>${previous}</var>
+<arg>${number-1}</arg>
+<status status="PASS" start="2024-09-23T17:12:28.402984" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-23T17:12:28.402984" level="INFO">${result} = 2</msg>
+<var>${result}</var>
+<arg>${number} * ${previous}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.402984" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${result}</value>
+<status status="PASS" start="2024-09-23T17:12:28.402984" elapsed="0.000000"/>
+</return>
+<msg time="2024-09-23T17:12:28.402984" level="INFO">${previous} = 2</msg>
+<var>${previous}</var>
+<arg>${number-1}</arg>
+<status status="PASS" start="2024-09-23T17:12:28.402453" elapsed="0.000531"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-23T17:12:28.402984" level="INFO">${result} = 6</msg>
+<var>${result}</var>
+<arg>${number} * ${previous}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.402984" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${result}</value>
+<status status="PASS" start="2024-09-23T17:12:28.402984" elapsed="0.000000"/>
+</return>
+<msg time="2024-09-23T17:12:28.402984" level="INFO">${previous} = 6</msg>
+<var>${previous}</var>
+<arg>${number-1}</arg>
+<status status="PASS" start="2024-09-23T17:12:28.397426" elapsed="0.005558"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-23T17:12:28.407536" level="INFO">${result} = 24</msg>
+<var>${result}</var>
+<arg>${number} * ${previous}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.402984" elapsed="0.004552"/>
+</kw>
+<return>
+<value>${result}</value>
+<status status="PASS" start="2024-09-23T17:12:28.407536" elapsed="0.000000"/>
+</return>
+<msg time="2024-09-23T17:12:28.407536" level="INFO">${previous} = 24</msg>
+<var>${previous}</var>
+<arg>${number-1}</arg>
+<status status="PASS" start="2024-09-23T17:12:28.397426" elapsed="0.010110"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-23T17:12:28.407536" level="INFO">${result} = 120</msg>
+<var>${result}</var>
+<arg>${number} * ${previous}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.407536" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${result}</value>
+<status status="PASS" start="2024-09-23T17:12:28.407536" elapsed="0.000000"/>
+</return>
+<msg time="2024-09-23T17:12:28.407536" level="INFO">${Answer} = 120</msg>
+<var>${Answer}</var>
+<arg>5</arg>
+<status status="PASS" start="2024-09-23T17:12:28.397426" elapsed="0.010110"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Answer}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.407536" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:28.393876" elapsed="0.013660"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:28.203836" elapsed="0.203700"/>
+</suite>
+<suite id="s1-s9" name="Assignment 17" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_17.robot">
+<test id="s1-s9-t1" name="TC-17" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-09-23T17:12:29.307787" level="INFO">Opening browser 'gc' to base url 'https://www.google.co.th/?hl=th'.</msg>
+<arg>https://www.google.co.th/?hl=th</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-23T17:12:29.307787" elapsed="3.139589"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Test is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:32.447881" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-23T17:12:32.448884" elapsed="2.218225"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:29.303336" elapsed="5.363773"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:29.113249" elapsed="5.554869"/>
+</suite>
+<suite id="s1-s10" name="Assignment 18" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_18.robot">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>Suite is starting</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:29.307787" elapsed="0.000000"/>
+</kw>
+<test id="s1-s10-t1" name="TC-18_01" line="11">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running Test 1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:29.307787" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:29.307787" elapsed="0.000000"/>
+</test>
+<test id="s1-s10-t2" name="TC-18_02" line="13">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running Test 2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:29.312295" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:29.312295" elapsed="0.000000"/>
+</test>
+<test id="s1-s10-t3" name="TC-18_03" line="15">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running Test 3</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:29.313316" elapsed="0.000446"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:29.313316" elapsed="0.000446"/>
+</test>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Suite is ending</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:29.313762" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:29.116701" elapsed="0.197061"/>
+</suite>
+<suite id="s1-s11" name="Assignment 19" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_19.robot">
+<test id="s1-s11-t1" name="TC-19_01" line="11">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running the test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.223792" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Test Case Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.223792" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:30.223792" elapsed="0.000000"/>
+</test>
+<test id="s1-s11-t2" name="TC-19_02" line="14">
+<kw name="Keyword With Teardown">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running the keyword</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Keyword Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Test Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:30.232327" elapsed="0.001018"/>
+</test>
+<test id="s1-s11-t3" name="TC-19_03" line="16">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running the test3</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Test Case Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</test>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Suite Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:30.036550" elapsed="0.196795"/>
+</suite>
+<suite id="s1-s12" name="Assignment 2" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_2.robot">
+<test id="s1-s12-t1" name="TC-02" line="13">
+<kw name="Print Fruits">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:31.473095" elapsed="0.000000"/>
+</kw>
+<var name="${Fruit}">apple</var>
+<status status="PASS" start="2024-09-23T17:12:31.473095" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:31.473095" elapsed="0.000000"/>
+</kw>
+<var name="${Fruit}">banana</var>
+<status status="PASS" start="2024-09-23T17:12:31.473095" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:31.473095" elapsed="0.000000"/>
+</kw>
+<var name="${Fruit}">cherry</var>
+<status status="PASS" start="2024-09-23T17:12:31.473095" elapsed="0.000000"/>
+</iter>
+<var>${Fruit}</var>
+<value>@{Fruits}</value>
+<status status="PASS" start="2024-09-23T17:12:31.473095" elapsed="0.000000"/>
+</for>
+<arg>apple</arg>
+<arg>banana</arg>
+<arg>cherry</arg>
+<status status="PASS" start="2024-09-23T17:12:31.473095" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:31.472494" elapsed="0.000601"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:31.283066" elapsed="0.190029"/>
+</suite>
+<suite id="s1-s13" name="Assignment 20-22" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_20-22.robot">
+<test id="s1-s13-t1" name="TC-20" line="8">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-23T17:12:32.633878" level="INFO">This is a Regression test</msg>
+<arg>This is a Regression test</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-23T17:12:32.633878" elapsed="0.000000"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" start="2024-09-23T17:12:32.633878" elapsed="0.000000"/>
+</test>
+<test id="s1-s13-t2" name="TC-21" line="11">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-23T17:12:32.633878" level="INFO">This is a Smoke and Critical Test</msg>
+<arg>This is a Smoke and Critical Test</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-23T17:12:32.633878" elapsed="0.000000"/>
+</kw>
+<tag>Critical</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-09-23T17:12:32.633878" elapsed="0.000000"/>
+</test>
+<test id="s1-s13-t3" name="TC-22" line="14">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-23T17:12:32.633878" level="INFO">This is a Regression and Smoke test</msg>
+<arg>This is a Regression and Smoke test</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-23T17:12:32.633878" elapsed="0.000000"/>
+</kw>
+<tag>Regression</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-09-23T17:12:32.633878" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:32.303305" elapsed="0.330573"/>
+</suite>
+<suite id="s1-s14" name="Assignment 23-25" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_23-25.robot">
+<test id="s1-s14-t1" name="TC-23" line="8">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running Test 1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:33.503399" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:33.503399" elapsed="0.000000"/>
+</test>
+<test id="s1-s14-t2" name="TC-24" line="10">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running Test 2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:33.503399" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:33.503399" elapsed="0.000000"/>
+</test>
+<test id="s1-s14-t3" name="TC-25" line="12">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running Test 3</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:33.503399" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:33.503399" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:33.312979" elapsed="0.190420"/>
+</suite>
+<suite id="s1-s15" name="Assignment 3" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_3.robot">
+<test id="s1-s15-t1" name="Tc-03" line="13">
+<kw name="Print User Info">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Logname : "${User_Info["name"]}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:34.403288" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Logage : "${User_Info["age"]}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:34.403288" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Logcity : "${User_Info["city"]}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:34.403288" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:34.403288" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:34.403288" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:34.222664" elapsed="0.180624"/>
+</suite>
+<suite id="s1-s16" name="Assignment 4" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_4.robot">
+<test id="s1-s16-t1" name="TC-04" line="13">
+<kw name="Greet User">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Hello,${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:35.233323" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:35.233323" elapsed="0.000000"/>
+</kw>
+<kw name="Greet User">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Hello,${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:35.233323" elapsed="0.000000"/>
+</kw>
+<arg>Smart</arg>
+<status status="PASS" start="2024-09-23T17:12:35.233323" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:35.232278" elapsed="0.001045"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:35.043208" elapsed="0.190115"/>
+</suite>
+<suite id="s1-s17" name="Assignment 5" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_5.robot">
+<test id="s1-s17-t1" name="TC-05" line="13">
+<kw name="Print All Items">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:36.153913" elapsed="0.000000"/>
+</kw>
+<var name="${items}">Apple</var>
+<status status="PASS" start="2024-09-23T17:12:36.153913" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:36.153913" elapsed="0.008528"/>
+</kw>
+<var name="${items}">Cherry</var>
+<status status="PASS" start="2024-09-23T17:12:36.153913" elapsed="0.008528"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:36.162441" elapsed="0.000546"/>
+</kw>
+<var name="${items}">Banana</var>
+<status status="PASS" start="2024-09-23T17:12:36.162441" elapsed="0.000546"/>
+</iter>
+<var>${items}</var>
+<value>@{items}</value>
+<status status="PASS" start="2024-09-23T17:12:36.153913" elapsed="0.009074"/>
+</for>
+<arg>Apple</arg>
+<arg>Cherry</arg>
+<arg>Banana</arg>
+<status status="PASS" start="2024-09-23T17:12:36.153913" elapsed="0.009074"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:36.153913" elapsed="0.009074"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:35.979857" elapsed="0.183130"/>
+</suite>
+<suite id="s1-s18" name="Assignment 6" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_6.robot">
+<test id="s1-s18-t1" name="TC-06" line="14">
+<kw name="Set Local Variable">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${LOCAL_VAR}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:37.083334" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${GLOBAL_VAR}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:37.083334" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:37.083334" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:37.083334" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:36.893132" elapsed="0.190202"/>
+</suite>
+<suite id="s1-s19" name="Assignment 7" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_7.robot">
+<test id="s1-s19-t1" name="TC-07" line="15">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${yaml user.name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:37.983288" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${yaml user.age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:37.983288" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${yaml user.city}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:37.983288" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:37.983288" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:37.803808" elapsed="0.179480"/>
+</suite>
+<suite id="s1-s20" name="Assignment 8" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_8.robot">
+<test id="s1-s20-t1" name="TC-08" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-23T17:12:38.913746" level="INFO">Opening browser 'gc' to base url 'https://www.google.co.th/?hl=th'.</msg>
+<arg>${yaml app url}</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-23T17:12:38.913746" elapsed="2.912471"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T17:12:41.827216" level="INFO">Typing text 'admin' into text field '//*[@id="APjFqb"]'.</msg>
+<arg>//*[@id="APjFqb"]</arg>
+<arg>${yaml credentials.username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T17:12:41.826217" elapsed="0.076867"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T17:12:46.903172" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T17:12:41.903084" elapsed="5.000088"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:38.913746" elapsed="7.989426"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:38.723418" elapsed="8.179754"/>
+</suite>
+<suite id="s1-s21" name="Assignment 9" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot">
+<test id="s1-s21-t1" name="TC-09_01" line="11">
+<kw name="Calculate Square">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-23T17:12:39.598603" level="INFO">${Result} = 9</msg>
+<var>${Result}</var>
+<arg>${Numbers}*${Numbers}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-23T17:12:39.598603" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:39.598603" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${Result}</value>
+<status status="PASS" start="2024-09-23T17:12:39.598603" elapsed="0.000000"/>
+</return>
+<msg time="2024-09-23T17:12:39.598603" level="INFO">${x} = 9</msg>
+<var>${x}</var>
+<arg>3</arg>
+<status status="PASS" start="2024-09-23T17:12:39.593589" elapsed="0.005014"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${X}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:39.598603" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:39.593589" elapsed="0.005014"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:39.407451" elapsed="0.191152"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 21 executions.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.416000" elapsed="0.227124"/>
+</suite>
+<statistics>
+<total>
+<stat pass="30" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Critical</stat>
+<stat pass="2" fail="0" skip="0">Regression</stat>
+<stat pass="2" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="30" fail="0" skip="0" id="s1" name="Basic Assignment">Basic Assignment</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Assignment 1">Basic Assignment.Assignment 1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Assignment 10">Basic Assignment.Assignment 10</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Assignment 11">Basic Assignment.Assignment 11</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="Assignment 12">Basic Assignment.Assignment 12</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s5" name="Assignment 13">Basic Assignment.Assignment 13</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s6" name="Assignment 14">Basic Assignment.Assignment 14</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s7" name="Assignment 15">Basic Assignment.Assignment 15</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s8" name="Assignment 16">Basic Assignment.Assignment 16</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s9" name="Assignment 17">Basic Assignment.Assignment 17</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s10" name="Assignment 18">Basic Assignment.Assignment 18</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s11" name="Assignment 19">Basic Assignment.Assignment 19</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s12" name="Assignment 2">Basic Assignment.Assignment 2</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s13" name="Assignment 20-22">Basic Assignment.Assignment 20-22</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s14" name="Assignment 23-25">Basic Assignment.Assignment 23-25</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s15" name="Assignment 3">Basic Assignment.Assignment 3</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s16" name="Assignment 4">Basic Assignment.Assignment 4</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s17" name="Assignment 5">Basic Assignment.Assignment 5</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s18" name="Assignment 6">Basic Assignment.Assignment 6</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s19" name="Assignment 7">Basic Assignment.Assignment 7</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s20" name="Assignment 8">Basic Assignment.Assignment 8</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s21" name="Assignment 9">Basic Assignment.Assignment 9</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-23T17:12:25.363654" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:25.363654" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:25.369163" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:25.373185" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:25.384998" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:25.383489" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:25.383489" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:25.384998" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:25.384998" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:25.403678" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.303595" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.303595" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.303595" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.313121" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.323538" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.315634" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.315634" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.315634" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.323538" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.337578" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.202275" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.203287" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.203287" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.205811" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.224591" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.205811" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.205811" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.205811" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.213365" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.230265" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.123380" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.132106" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.133121" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.136449" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.150556" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.145527" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.145527" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.147548" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.153065" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.163163" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.043287" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.045857" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.045857" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.053979" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.063037" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.053979" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.053979" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.053979" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.058505" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.073761" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.973808" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.973808" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.973808" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.983089" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.993675" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:31.213706" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:31.213706" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:31.213706" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:31.223253" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:31.233570" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:32.234058" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:32.235060" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:32.236062" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:32.241100" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:32.255340" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:33.255722" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:33.255722" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:33.257730" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:33.263463" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:33.275550" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:34.162479" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:34.162479" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:34.163014" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:34.163014" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:34.182705" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:34.983724" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:34.983724" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:34.989283" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:34.993251" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:35.005275" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:35.918471" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:35.918471" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:35.918471" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:35.923507" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:35.933056" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:36.823495" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:36.823495" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:36.823495" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:36.836444" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:36.843663" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:37.743033" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:37.743033" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:37.743033" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:37.749585" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:37.762527" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:38.662409" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:38.663723" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:38.663723" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:38.668894" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:38.673950" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:39.333374" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:39.333374" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:39.333374" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:39.345415" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:39.357101" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

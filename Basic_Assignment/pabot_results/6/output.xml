@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-23T17:12:28.158711" rpa="false" schemaversion="5">
+<suite id="s1" name="Basic Assignment" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment">
+<suite id="s1-s1" name="Assignment 15" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_15.robot">
+<test id="s1-s1-t1" name="TC-15" line="8">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T17:12:28.383110" level="INFO">Clicking element 'id=0'.</msg>
+<msg time="2024-09-23T17:12:28.383110" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-23T17:12:28.383110" level="FAIL">No browser is open.</msg>
+<arg>id=0</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-23T17:12:28.383110" elapsed="0.000000">No browser is open.</status>
+</kw>
+<msg time="2024-09-23T17:12:28.383110" level="INFO">${status} = False</msg>
+<var>${status}</var>
+<arg>Click Element</arg>
+<arg>id=0</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.383110" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Status: ${status}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.383110" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T17:12:28.383110" level="INFO">Typing text '5' into text field 'id=0'.</msg>
+<msg time="2024-09-23T17:12:28.383110" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-23T17:12:28.383110" level="FAIL">No browser is open.</msg>
+<arg>id=0</arg>
+<arg>5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-23T17:12:28.383110" elapsed="0.000000">No browser is open.</status>
+</kw>
+<arg>Input Text</arg>
+<arg>id=0</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.383110" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Ignored the error and continued</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:28.383110" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:28.383110" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:28.193237" elapsed="0.189873"/>
+</suite>
+<status status="PASS" start="2024-09-23T17:12:28.176392" elapsed="0.215869"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Basic Assignment">Basic Assignment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment 15">Basic Assignment.Assignment 15</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-23T17:12:28.123380" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.132106" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.133121" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.136449" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:28.150556" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

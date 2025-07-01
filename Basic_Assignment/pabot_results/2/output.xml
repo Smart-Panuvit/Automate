@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-23T17:12:26.331551" rpa="false" schemaversion="5">
+<suite id="s1" name="Basic Assignment" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment">
+<suite id="s1-s1" name="Assignment 11" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot">
+<test id="s1-s1-t1" name="TC-11" line="11">
+<kw name="Create User Info">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-09-23T17:12:26.562847" level="INFO">${user_info} = {'name': 'John', 'age': '30', 'city': 'Bangkok'}</msg>
+<var>${user_info}</var>
+<arg>name=John</arg>
+<arg>age=30</arg>
+<arg>city=Bangkok</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-09-23T17:12:26.562212" elapsed="0.000635"/>
+</kw>
+<return>
+<value>${user_info}</value>
+<status status="PASS" start="2024-09-23T17:12:26.562847" elapsed="0.000516"/>
+</return>
+<msg time="2024-09-23T17:12:26.563363" level="INFO">&amp;{user} = { name=John | age=30 | city=Bangkok }</msg>
+<var>&amp;{user}</var>
+<status status="PASS" start="2024-09-23T17:12:26.553706" elapsed="0.009657"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Log Name: ${user.name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:26.563363" elapsed="0.001024"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:26.553706" elapsed="0.010681"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:26.363735" elapsed="0.200652"/>
+</suite>
+<status status="PASS" start="2024-09-23T17:12:26.352154" elapsed="0.213237"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Basic Assignment">Basic Assignment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment 11">Basic Assignment.Assignment 11</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-23T17:12:26.303595" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.303595" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.303595" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.313121" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.323538" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

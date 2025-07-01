@@ -1,0 +1,16 @@
+1727676596835	geckodriver	INFO	Listening on 127.0.0.1:50493
+1727676599886	mozrunner::runner	INFO	Running command: "C:\\Users\\Panuvit Sakulpojwora\\.cache\\selenium\\firefox\\win64\\130.0.1\\firefox.exe" "--marionette" "-- ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PANUVI~1\\AppData\\Local\\Temp\\rust_mozprofileXq5ol4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727676600215	Marionette	INFO	Marionette enabled
+1727676600339	Marionette	INFO	Listening on port 50503
+WebDriver BiDi listening on ws://127.0.0.1:50494
+Read port: 50503
+1727676600502	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50494/devtools/browser/b903e96a-ed82-4806-ba07-ec665ada3a6d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://training-platform.doppio-tech.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://training-platform.doppio-tech.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://training-platform.doppio-tech.com."
+1727676610900	Marionette	INFO	Stopped listening on port 50503
+Dynamically enable window occlusion 1

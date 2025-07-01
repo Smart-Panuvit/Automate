@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-23T17:12:33.283105" rpa="false" schemaversion="5">
+<suite id="s1" name="Basic Assignment" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment">
+<suite id="s1-s1" name="Assignment 23-25" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_23-25.robot">
+<test id="s1-s1-t1" name="TC-23" line="8">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running Test 1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:33.503399" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:33.503399" elapsed="0.000000"/>
+</test>
+<test id="s1-s1-t2" name="TC-24" line="10">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running Test 2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:33.503399" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:33.503399" elapsed="0.000000"/>
+</test>
+<test id="s1-s1-t3" name="TC-25" line="12">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running Test 3</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:33.503399" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:33.503399" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:33.312979" elapsed="0.190420"/>
+</suite>
+<status status="PASS" start="2024-09-23T17:12:33.306954" elapsed="0.196445"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Basic Assignment">Basic Assignment</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Assignment 23-25">Basic Assignment.Assignment 23-25</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-23T17:12:33.255722" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:33.255722" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:33.257730" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:33.263463" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:33.275550" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-23T17:12:26.343629" rpa="false" schemaversion="5">
+<suite id="s1" name="Basic Assignment" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment">
+<suite id="s1-s1" name="Assignment 12" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_12.robot">
+<test id="s1-s1-t1" name="TC-12" line="8">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-23T17:12:26.567377" level="INFO">${age} = 17</msg>
+<var>${age}</var>
+<arg>17</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-23T17:12:26.567377" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>You are underage</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:26.568392" elapsed="0.001007"/>
+</kw>
+<arg>${age}&gt;18</arg>
+<arg>Log To Console</arg>
+<arg>You are an adult</arg>
+<arg>ELSE IF</arg>
+<arg>${age}==18</arg>
+<arg>Log To Console</arg>
+<arg>You just became an adult</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>You are underage</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:26.568392" elapsed="0.001007"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:26.566391" elapsed="0.003008"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:26.377284" elapsed="0.193115"/>
+</suite>
+<status status="PASS" start="2024-09-23T17:12:26.363735" elapsed="0.207659"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Basic Assignment">Basic Assignment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment 12">Basic Assignment.Assignment 12</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-23T17:12:26.315634" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.315634" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.315634" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.323538" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:26.337578" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

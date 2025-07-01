@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-23T17:12:27.233110" rpa="false" schemaversion="5">
+<suite id="s1" name="Basic Assignment" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment">
+<suite id="s1-s1" name="Assignment 14" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_14.robot">
+<test id="s1-s1-t1" name="TC-14" line="8">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==5</arg>
+<arg>Exit FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==3</arg>
+<arg>Continue FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</kw>
+<var name="${numbers}">1</var>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==5</arg>
+<arg>Exit FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==3</arg>
+<arg>Continue FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</kw>
+<var name="${numbers}">2</var>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==5</arg>
+<arg>Exit FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Continue For Loop" owner="BuiltIn">
+<msg time="2024-09-23T17:12:27.469249" level="INFO">Continuing for loop from the next iteration.</msg>
+<doc>Skips the current FOR loop iteration and continues from the next.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.000000"/>
+</kw>
+<arg>${numbers}==3</arg>
+<arg>Continue FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.000000"/>
+</kw>
+<var name="${numbers}">3</var>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==5</arg>
+<arg>Exit FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.003010"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.472259" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==3</arg>
+<arg>Continue FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.472259" elapsed="0.001020"/>
+</kw>
+<var name="${numbers}">4</var>
+<status status="PASS" start="2024-09-23T17:12:27.469249" elapsed="0.004030"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Exit For Loop" owner="BuiltIn">
+<msg time="2024-09-23T17:12:27.473970" level="INFO">Exiting for loop altogether.</msg>
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.473970" elapsed="0.000000"/>
+</kw>
+<arg>${numbers}==5</arg>
+<arg>Exit FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-23T17:12:27.473279" elapsed="0.000691"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-23T17:12:27.473970" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${numbers}==3</arg>
+<arg>Continue FOR LOOP</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2024-09-23T17:12:27.473970" elapsed="0.000000"/>
+</kw>
+<var name="${numbers}">5</var>
+<status status="PASS" start="2024-09-23T17:12:27.473279" elapsed="0.000691"/>
+</iter>
+<var>${numbers}</var>
+<value>1</value>
+<value>10</value>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.010669"/>
+</for>
+<status status="PASS" start="2024-09-23T17:12:27.463301" elapsed="0.010669"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:27.273116" elapsed="0.200854"/>
+</suite>
+<status status="PASS" start="2024-09-23T17:12:27.261257" elapsed="0.212713"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Basic Assignment">Basic Assignment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment 14">Basic Assignment.Assignment 14</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-23T17:12:27.205811" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.205811" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.205811" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.213365" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:27.230265" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
