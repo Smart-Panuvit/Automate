@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-23T17:12:32.263156" rpa="false" schemaversion="5">
+<suite id="s1" name="Basic Assignment" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment">
+<suite id="s1-s1" name="Assignment 20-22" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_20-22.robot">
+<test id="s1-s1-t1" name="TC-20" line="8">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-23T17:12:32.633878" level="INFO">This is a Regression test</msg>
+<arg>This is a Regression test</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-23T17:12:32.633878" elapsed="0.000000"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" start="2024-09-23T17:12:32.633878" elapsed="0.000000"/>
+</test>
+<test id="s1-s1-t2" name="TC-21" line="11">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-23T17:12:32.633878" level="INFO">This is a Smoke and Critical Test</msg>
+<arg>This is a Smoke and Critical Test</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-23T17:12:32.633878" elapsed="0.000000"/>
+</kw>
+<tag>Critical</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-09-23T17:12:32.633878" elapsed="0.000000"/>
+</test>
+<test id="s1-s1-t3" name="TC-22" line="14">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-23T17:12:32.633878" level="INFO">This is a Regression and Smoke test</msg>
+<arg>This is a Regression and Smoke test</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-23T17:12:32.633878" elapsed="0.000000"/>
+</kw>
+<tag>Regression</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-09-23T17:12:32.633878" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:32.303305" elapsed="0.330573"/>
+</suite>
+<status status="PASS" start="2024-09-23T17:12:32.289839" elapsed="0.344039"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Critical</stat>
+<stat pass="2" fail="0" skip="0">Regression</stat>
+<stat pass="2" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Basic Assignment">Basic Assignment</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Assignment 20-22">Basic Assignment.Assignment 20-22</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-23T17:12:32.234058" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:32.235060" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:32.236062" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:32.241100" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:32.255340" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

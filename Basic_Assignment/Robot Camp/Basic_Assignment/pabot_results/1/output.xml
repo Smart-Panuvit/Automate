@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-23T17:12:25.403678" rpa="false" schemaversion="5">
+<suite id="s1" name="Basic Assignment" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment">
+<suite id="s1-s1" name="Assignment 10" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot">
+<test id="s1-s1-t1" name="TC-10" line="11">
+<kw name="Create Fruit list">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-23T17:12:25.653422" level="INFO">${Fruit} = ['Apple', 'Cherry', 'Banana']</msg>
+<var>${Fruit}</var>
+<arg>Apple</arg>
+<arg>Cherry</arg>
+<arg>Banana</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.653422" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${Fruit}</value>
+<status status="PASS" start="2024-09-23T17:12:25.653422" elapsed="0.000000"/>
+</return>
+<msg time="2024-09-23T17:12:25.653422" level="INFO">@{my_fruits} = [ Apple | Cherry | Banana ]</msg>
+<var>@{my_fruits}</var>
+<status status="PASS" start="2024-09-23T17:12:25.652393" elapsed="0.001029"/>
+</kw>
+<kw name="Number Of Fruits">
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-09-23T17:12:25.655964" level="INFO">Length is 3.</msg>
+<msg time="2024-09-23T17:12:25.655964" level="INFO">${number} = 3</msg>
+<var>${number}</var>
+<arg>${fruit_list}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.653422" elapsed="0.002542"/>
+</kw>
+<return>
+<value>${number}</value>
+<status status="PASS" start="2024-09-23T17:12:25.655964" elapsed="0.000000"/>
+</return>
+<msg time="2024-09-23T17:12:25.655964" level="INFO">${numbers} = 3</msg>
+<var>${numbers}</var>
+<arg>@{my_fruits}</arg>
+<status status="PASS" start="2024-09-23T17:12:25.653422" elapsed="0.002542"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${my_fruits[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.655964" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${my_fruits[1]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.655964" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${my_fruits[2]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.655964" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:25.655964" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:25.646859" elapsed="0.009105"/>
+</test>
+<status status="PASS" start="2024-09-23T17:12:25.445825" elapsed="0.210139"/>
+</suite>
+<status status="PASS" start="2024-09-23T17:12:25.432255" elapsed="0.223709"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Basic Assignment">Basic Assignment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment 10">Basic Assignment.Assignment 10</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-23T17:12:25.383489" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:25.383489" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:25.384998" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:25.384998" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:25.403678" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

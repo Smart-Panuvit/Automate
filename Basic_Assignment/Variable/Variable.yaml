@@ -1,0 +1,9 @@
+yaml user:
+  name: John
+  age: 30 
+  city: Bangkok
+
+yaml app url: https://www.google.co.th/?hl=th
+yaml credentials:
+  username: admin 
+  password: password123

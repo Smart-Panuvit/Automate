@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-20T13:30:42.750555" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot Camp" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp">
+<suite id="s1-s1" name="IF ELSE Assignment" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\IF_ELSE_Assignment.robot">
+<test id="s1-s1-t1" name="Test print text" line="6">
+<kw name="Score">
+<if>
+<branch type="IF" condition="${text}&gt;=90">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>A</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-20T13:30:42.995721" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-20T13:30:42.994709" elapsed="0.002034"/>
+</branch>
+<branch type="ELSE IF" condition="${text}&gt;=80">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>B</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-20T13:30:42.996743" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-20T13:30:42.996743" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${text}&gt;=70">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>C</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-20T13:30:42.997768" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-20T13:30:42.996743" elapsed="0.001025"/>
+</branch>
+<branch type="ELSE IF" condition="${text}&gt;=60">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>D</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-20T13:30:42.997768" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-20T13:30:42.997768" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>F</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-20T13:30:42.998796" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-20T13:30:42.997768" elapsed="0.001028"/>
+</branch>
+<status status="PASS" start="2024-09-20T13:30:42.994709" elapsed="0.004087"/>
+</if>
+<arg>59</arg>
+<status status="PASS" start="2024-09-20T13:30:42.994709" elapsed="0.004087"/>
+</kw>
+<status status="PASS" start="2024-09-20T13:30:42.993707" elapsed="0.005089"/>
+</test>
+<status status="PASS" start="2024-09-20T13:30:42.785449" elapsed="0.214371"/>
+</suite>
+<status status="PASS" start="2024-09-20T13:30:42.772981" elapsed="0.227869"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Camp">Robot Camp</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="IF ELSE Assignment">Robot Camp.IF ELSE Assignment</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

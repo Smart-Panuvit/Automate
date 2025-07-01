@@ -1,0 +1,26 @@
+==============================================================================
+Basic Assignment                                                              
+==============================================================================
+Basic Assignment.Assignment 19                                                
+==============================================================================
+TC-19_01                                                              Running the test
+Test Case Teardown is running
+| PASS |
+------------------------------------------------------------------------------
+TC-19_02                                                              Running the keyword
+Keyword Teardown is running
+Test Teardown is running
+| PASS |
+------------------------------------------------------------------------------
+TC-19_03                                                              Running the test3
+Test Case Teardown is running
+| PASS |
+------------------------------------------------------------------------------
+Suite Teardown is running
+Basic Assignment.Assignment 19                                        | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Basic Assignment                                                      | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\pabot_results\10\output.xml

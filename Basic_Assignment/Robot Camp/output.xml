@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2025-07-01T10:37:10.823179" rpa="false" schemaversion="5">
+<suite id="s1" name="FOR LOOP Assignment" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Robot Camp\FOR_LOOP_Assignment.robot">
+<test id="s1-t1" name="TEST MARVEL" line="13">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.072285" level="INFO">${i} = 0</msg>
+<var>${i}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.071269" elapsed="0.001016"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.072285" level="INFO">${number} = 0</msg>
+<var>${number}</var>
+<arg>${i}%2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.072285" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number}==0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.072285" elapsed="0.001415"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.073700" level="INFO">${i} = 1</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.073700" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-07-01T10:37:11.072285" elapsed="0.001415"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.073700" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-07-01T10:37:11.073700" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-07-01T10:37:11.072285" elapsed="0.001415"/>
+</if>
+<var name="${value}">ironman</var>
+<status status="PASS" start="2025-07-01T10:37:11.072285" elapsed="0.001415"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.074713" level="INFO">${number} = 1</msg>
+<var>${number}</var>
+<arg>${i}%2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.073700" elapsed="0.001013"/>
+</kw>
+<if>
+<branch type="IF" condition="${number}==0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.074713" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.074713" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-07-01T10:37:11.074713" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.074713" level="INFO">${i} = 2</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.074713" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-07-01T10:37:11.074713" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-07-01T10:37:11.074713" elapsed="0.000000"/>
+</if>
+<var name="${value}">batman</var>
+<status status="PASS" start="2025-07-01T10:37:11.073700" elapsed="0.001013"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.075726" level="INFO">${number} = 0</msg>
+<var>${number}</var>
+<arg>${i}%2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.074713" elapsed="0.001013"/>
+</kw>
+<if>
+<branch type="IF" condition="${number}==0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.075726" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.075726" level="INFO">${i} = 3</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.075726" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-07-01T10:37:11.075726" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.075726" elapsed="0.001006"/>
+</kw>
+<status status="NOT RUN" start="2025-07-01T10:37:11.075726" elapsed="0.001006"/>
+</branch>
+<status status="PASS" start="2025-07-01T10:37:11.075726" elapsed="0.001006"/>
+</if>
+<var name="${value}">captain</var>
+<status status="PASS" start="2025-07-01T10:37:11.074713" elapsed="0.002019"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.076732" level="INFO">${number} = 1</msg>
+<var>${number}</var>
+<arg>${i}%2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.076732" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number}==0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.076732" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.076732" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-07-01T10:37:11.076732" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.077744" level="INFO">${i} = 4</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.076732" elapsed="0.001012"/>
+</kw>
+<status status="PASS" start="2025-07-01T10:37:11.076732" elapsed="0.001012"/>
+</branch>
+<status status="PASS" start="2025-07-01T10:37:11.076732" elapsed="0.001012"/>
+</if>
+<var name="${value}">superman</var>
+<status status="PASS" start="2025-07-01T10:37:11.076732" elapsed="0.001012"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.077744" level="INFO">${number} = 0</msg>
+<var>${number}</var>
+<arg>${i}%2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.077744" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number}==0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.077744" elapsed="0.001016"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.078760" level="INFO">${i} = 5</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.078760" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-07-01T10:37:11.077744" elapsed="0.001016"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.078760" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-07-01T10:37:11.078760" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-07-01T10:37:11.077744" elapsed="0.001016"/>
+</if>
+<var name="${value}">hulk</var>
+<status status="PASS" start="2025-07-01T10:37:11.077744" elapsed="0.001016"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.079777" level="INFO">${number} = 1</msg>
+<var>${number}</var>
+<arg>${i}%2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.079777" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number}==0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.079777" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.079777" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-07-01T10:37:11.079777" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.079777" level="INFO">${i} = 6</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.079777" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-07-01T10:37:11.079777" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-07-01T10:37:11.079777" elapsed="0.000000"/>
+</if>
+<var name="${value}">shazam</var>
+<status status="PASS" start="2025-07-01T10:37:11.078760" elapsed="0.001017"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.080789" level="INFO">${number} = 0</msg>
+<var>${number}</var>
+<arg>${i}%2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.079777" elapsed="0.001012"/>
+</kw>
+<if>
+<branch type="IF" condition="${number}==0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.080789" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.081796" level="INFO">${i} = 7</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.080789" elapsed="0.001007"/>
+</kw>
+<status status="PASS" start="2025-07-01T10:37:11.080789" elapsed="0.001007"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.081796" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-07-01T10:37:11.081796" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-07-01T10:37:11.080789" elapsed="0.001007"/>
+</if>
+<var name="${value}">thor</var>
+<status status="PASS" start="2025-07-01T10:37:11.079777" elapsed="0.002019"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.081796" level="INFO">${number} = 1</msg>
+<var>${number}</var>
+<arg>${i}%2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.081796" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number}==0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.081796" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.082842" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-07-01T10:37:11.081796" elapsed="0.001046"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.082842" level="INFO">${i} = 8</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.082842" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-07-01T10:37:11.082842" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-07-01T10:37:11.081796" elapsed="0.001046"/>
+</if>
+<var name="${value}">flash</var>
+<status status="PASS" start="2025-07-01T10:37:11.081796" elapsed="0.001046"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.082842" level="INFO">${number} = 0</msg>
+<var>${number}</var>
+<arg>${i}%2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.082842" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number}==0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.083864" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.083864" level="INFO">${i} = 9</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.083864" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-07-01T10:37:11.082842" elapsed="0.001022"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.084874" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-07-01T10:37:11.083864" elapsed="0.001010"/>
+</branch>
+<status status="PASS" start="2025-07-01T10:37:11.082842" elapsed="0.002032"/>
+</if>
+<var name="${value}">blackwidow</var>
+<status status="PASS" start="2025-07-01T10:37:11.082842" elapsed="0.002032"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.086094" level="INFO">${number} = 1</msg>
+<var>${number}</var>
+<arg>${i}%2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.084874" elapsed="0.001220"/>
+</kw>
+<if>
+<branch type="IF" condition="${number}==0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.086094" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.087098" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-07-01T10:37:11.086094" elapsed="0.001004"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.087098" level="INFO">${i} = 10</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.087098" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-07-01T10:37:11.087098" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-07-01T10:37:11.086094" elapsed="0.001004"/>
+</if>
+<var name="${value}">wonderwomen</var>
+<status status="PASS" start="2025-07-01T10:37:11.084874" elapsed="0.002224"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.087098" level="INFO">${number} = 0</msg>
+<var>${number}</var>
+<arg>${i}%2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.087098" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${number}==0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.088146" elapsed="0.001145"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-01T10:37:11.089291" level="INFO">${i} = 11</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-01T10:37:11.089291" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-07-01T10:37:11.087098" elapsed="0.002193"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-07-01T10:37:11.090304" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-07-01T10:37:11.090304" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-07-01T10:37:11.087098" elapsed="0.003206"/>
+</if>
+<var name="${value}">hawkeye</var>
+<status status="PASS" start="2025-07-01T10:37:11.087098" elapsed="0.003206"/>
+</iter>
+<var>${value}</var>
+<value>@{list}</value>
+<status status="PASS" start="2025-07-01T10:37:11.072285" elapsed="0.018019"/>
+</for>
+<status status="PASS" start="2025-07-01T10:37:11.070051" elapsed="0.020253"/>
+</test>
+<status status="PASS" start="2025-07-01T10:37:10.825362" elapsed="0.265947"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="FOR LOOP Assignment">FOR LOOP Assignment</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

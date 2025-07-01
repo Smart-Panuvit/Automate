@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-23T17:12:30.003184" rpa="false" schemaversion="5">
+<suite id="s1" name="Basic Assignment" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment">
+<suite id="s1-s1" name="Assignment 19" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_19.robot">
+<test id="s1-s1-t1" name="TC-19_01" line="11">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running the test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.223792" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Test Case Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.223792" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:30.223792" elapsed="0.000000"/>
+</test>
+<test id="s1-s1-t2" name="TC-19_02" line="14">
+<kw name="Keyword With Teardown">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running the keyword</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Keyword Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Test Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:30.232327" elapsed="0.001018"/>
+</test>
+<test id="s1-s1-t3" name="TC-19_03" line="16">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running the test3</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Test Case Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</test>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Suite Teardown is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-23T17:12:30.233345" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:12:30.036550" elapsed="0.196795"/>
+</suite>
+<status status="PASS" start="2024-09-23T17:12:30.023181" elapsed="0.210164"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Basic Assignment">Basic Assignment</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Assignment 19">Basic Assignment.Assignment 19</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-23T17:12:29.973808" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.973808" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_10.robot' on line 27: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.973808" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_11.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.983089" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_16.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-23T17:12:29.993675" level="WARN">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Basic_Assignment\Assignment_9.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

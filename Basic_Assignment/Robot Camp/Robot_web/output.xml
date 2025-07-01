@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-30T16:58:55.534455" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 01 Register" source="C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Robot_web\Testcases\TC_01_Register.robot">
+<test id="s1-t1" name="TC-01_Register" line="9">
+<kw name="Register_Keyword.Open_Browsers">
+<msg time="2024-09-30T16:58:55.721010" level="FAIL">No keyword with name 'Register_Keyword.Open_Browsers' found.</msg>
+<status status="FAIL" start="2024-09-30T16:58:55.721010" elapsed="0.000000">No keyword with name 'Register_Keyword.Open_Browsers' found.</status>
+</kw>
+<kw name="Homepage_Keyword.Click_Cart_Button">
+<status status="NOT RUN" start="2024-09-30T16:58:55.721010" elapsed="0.000000"/>
+</kw>
+<kw name="Click_Sign_Up_Login_Page">
+<status status="NOT RUN" start="2024-09-30T16:58:55.721010" elapsed="0.000000"/>
+</kw>
+<kw name="Input_Username">
+<arg>panuvit.s1@doppiotech.com</arg>
+<status status="NOT RUN" start="2024-09-30T16:58:55.721010" elapsed="0.000000"/>
+</kw>
+<kw name="Input_Password">
+<arg>P@ss#1234</arg>
+<status status="NOT RUN" start="2024-09-30T16:58:55.721010" elapsed="0.000000"/>
+</kw>
+<kw name="Input_Confirm_Password">
+<arg>P@ss#1234</arg>
+<status status="NOT RUN" start="2024-09-30T16:58:55.721010" elapsed="0.000000"/>
+</kw>
+<kw name="Click_Sign_Up_Register_Page">
+<status status="NOT RUN" start="2024-09-30T16:58:55.721010" elapsed="0.000000"/>
+</kw>
+<kw name="Click_OK_Register_Page">
+<status status="NOT RUN" start="2024-09-30T16:58:55.721010" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-30T16:58:55.715998" elapsed="0.005012">No keyword with name 'Register_Keyword.Open_Browsers' found.</status>
+</test>
+<status status="FAIL" start="2024-09-30T16:58:55.534455" elapsed="0.186555"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC 01 Register">TC 01 Register</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-30T16:58:55.715998" level="ERROR">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Robot_web\Resources\Library\Import.robot' on line 4: Resource file '..\..\..\Keywords\Pages\Register_Keyword.robot' does not exist.</msg>
+<msg time="2024-09-30T16:58:55.715998" level="ERROR">Error in file 'C:\Users\Panuvit Sakulpojwora\Desktop\Robot Camp\Robot_web\Resources\Library\Import.robot' on line 6: Resource file '..\..\..\Keywords\Pages\Homepage_Keyword.robot' does not exist.</msg>
+</errors>
+</robot>
