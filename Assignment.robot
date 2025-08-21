@@ -69,7 +69,12 @@ Fill Delivery Info and Click Pay
 
 Pay by Credit Card
     Click Element   //*[@id="app"]/section/div/div/button
-    Select First Product2s
+    Sleep   2s
+
+Pay by Qr Code
+    Click Element   //*[@id="app"]/section/div/div/div/div[2]/label/span[1]/input
+    Click Element   //*[@id="app"]/section/div/div/button
+    Sleep   2s
 
 Input Payment Details and Confirm Payment
     Input Text  //*[@id="basic_bin"]    ${Card_Num}
@@ -78,6 +83,24 @@ Input Payment Details and Confirm Payment
     Input Text  //*[@id="basic_owner"]  ${Name}
     Click Element   //*[@id="app"]/section/div/div/form/div[4]/div/div/div/div/button
     Sleep   2s
+
+Apply Coupon
+    Input Text  //*[@id="app"]/section/div/div[2]/div/div[1]/div[2]/span/input
+    Click Element   //*[@id="app"]/section/div/div[2]/div/div[1]/div[2]/span/input
+    Sleep   2s
+
+Remove Coupon
+    Click Element   //*[@id="app"]/section/div/div[2]/div/div[1]/div[2]/span/button[2]
+    Sleep 2s
+
+Remove Cart
+    Click Element   //*[@id="app"]/section/div/div[2]/div/div[1]/div[1]/div/div/div/ul/div[1]/button
+
+Back To Home Page
+    Click Element   //*[@id="app"]/section/header/ul/div/div[1]/li
+
+Go to Profile Page
+    Click Element   //*[@id="app"]/section/header/ul/div/div[2]/div[2]/span
 
 
 
