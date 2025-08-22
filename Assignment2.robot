@@ -38,6 +38,33 @@ Remove Product from Cart By Name
     Wait Until Element Is Visible    ${btn}    5s
     Click Element    ${btn}
 
+Input Filter min max 
+    [Arguments]     ${min}      ${max}
+    Input Text      //*[@id="app"]/section/div[3]/div/input[1]      ${min}
+    Input Text      //*[@id="app"]/section/div[3]/div/input[1]      ${max}
+    sleep   2s
+
+Click Filter Discount
+    Click Element   //*[@id="app"]/section/div[3]/label/span[1]/input
+
+Click Filter button
+    Click Element   //*[@id="app"]/section/div/div[1]/button/span
+
+Clear Filter
+    Click Element   //*[@id="app"]/section/div[3]/button[1]
+
+Apply Filter
+    Click Element   //*[@id="app"]/section/div[3]/button[2]
+    sleep   2s
+
+Log out
+    Click Element   //*[@id="app"]/section/button
+    sleep 2s
+
+Click Edit User Info
+    Click Element   //*[@id="app"]/section/div/div[1]/div/div/button/span
+
+
 *** Test Cases ***
 Test Assignment 2
     Open Website
